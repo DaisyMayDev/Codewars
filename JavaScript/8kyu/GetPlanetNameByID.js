@@ -1,0 +1,39 @@
+// Get Planet Name by ID
+// The function is not returning the correct values. Can you figure out why?
+
+const id = 3;
+
+function getPlanetName(id){
+  var name;
+  switch(id){
+    case 1:
+      name = 'Mercury';
+      break;
+    case 2:
+      name = 'Venus';
+      break;
+    case 3:
+      name = 'Earth';
+      break;
+    case 4:
+      name = 'Mars';
+      break;
+    case 5:
+      name = 'Jupiter';
+      break;
+    case 6:
+      name = 'Saturn';
+      break;
+    case 7:
+      name = 'Uranus';
+      break;
+    case 8:
+      name = 'Neptune';
+      break;
+  }
+  return name;
+}
+
+console.log(`The planet with the ID of ${id} is ${getPlanetName(id)}.`);
+
+//Output in console ->  The planet with the ID of 3 is Earth.
